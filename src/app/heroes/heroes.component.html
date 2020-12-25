@@ -13,7 +13,11 @@
     >Hero name:
     <input #heroName />
   </label>
-  <button (click)="add(heroName.value); heroName.value = ''">
+  <button
+    (click)="
+      add(heroes[heroes.length - 1].id + 1, heroName.value); heroName.value = ''
+    "
+  >
     add
   </button>
 </div>
