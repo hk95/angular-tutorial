@@ -27,7 +27,9 @@ export class HeroDetailComponent implements OnInit {
     this.heroService
       .getHero(id)
       .pipe(take(1))
-      .subscribe((hero) => (this.hero = hero));
+      .subscribe((hero: Hero) => {
+        this.hero = hero[0];
+      });
   }
 
   goBack(): void {
