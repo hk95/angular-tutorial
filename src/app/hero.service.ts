@@ -9,7 +9,7 @@ import { MessageService } from './message.service';
   providedIn: 'root',
 })
 export class HeroService {
-  private dataURL = 'http://192.168.10.10/';
+  private dataURL = 'http://54.150.64.80/';
   private httpOptions = {
     headers: new HttpHeaders({ responseType: 'text' }),
   };
